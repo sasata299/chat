@@ -46,6 +46,7 @@ server.listen(app.get('port'), function(){
 
 io.sockets.on('connection', function(socket) {
   var address = socket.handshake.address;
+
   console.log(address);
   console.log("connected from " + address.address + ":" + address.port);
 
